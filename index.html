@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joan J</title>
+	<style type="text/css">
+		body,*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		main section
+		{
+			width: 100%;
+			height: 110vh;
+			background-color: #00a19a;
+		}
+		main header
+		{
+			background-color: #00a19a;
+			position: fixed;
+			width: 100%;
+			height: 10vh;
+			z-index: 3;
+		}
+		main header nav
+		{
+			height: 10vh;
+			width: 93%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: white;
+			font-size: 3vmin;
+		}
+		main header nav ul
+		{
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+		}
+		main header nav ul li
+		{
+			border-right: 1px solid white;
+			padding-right: 1vmin;
+			padding-left: 1vmin;
+			cursor: pointer;
+		}
+		main header nav p
+		{
+			flex-grow: 1;
+			display: flex;
+			justify-content: flex-end;
+			cursor: pointer;
+		}
+		.reel
+		{
+			width: 100%;
+			height: 100vh;
+			transform: rotateX(-90deg);
+			transform-origin: top;	
+			background-color: rgba(0,161,154,0.9);
+			transition: transform 2s;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			pointer-events: none;
+		}
+		main:hover .reel
+		{
+			background-color: rgba(0,161,154,0.6);
+		}
+		.reel img
+		{
+			width: 60%;
+		}
+		.container_1 
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.container_1 img
+		{
+			width: 30%;
+			height: 40vh;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+		.container_1 div
+		{
+			width: 10vw;
+			height: 10vw;
+			position: absolute;
+			top: 85%;
+			border: 1px solid white;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+
+		.container_1 div p
+		{
+			font-size: 3vmin;
+			color: white;
+			transform: translateY(60%);
+			transition: transform 750ms;
+		}
+		.container_1 div:hover
+		{
+			background-color:  #00a19a;
+			z-index: 2;
+		}
+		.container_1 div:hover p
+		{
+			transform: translateY(0%);
+		}
+		.container_1 h1
+		{
+			width: 70%;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 400%;
+			color: white;
+			z-index: 1;
+			position: fixed;
+			pointer-events: none;
+		}
+		.container_2
+		{
+			display: flex;
+			justify-content: flex-end;
+		}
+		.container_2 aside
+		{
+			width: 70%;
+			border: 1px solid #af5252db;
+			display: flex;
+			z-index: 2;
+		}
+		.container_2 aside div
+		{
+			width: 50%;
+			height: 100vh;
+			background-color: #00a19a;
+		}
+		.container_2 aside div img
+		{
+			width: 100%;
+			height: 110vh;
+		}
+		.container_2 aside div  p
+		{
+			color: white;
+			font-family: sans-serif;
+			font-size: 150%;
+			padding: 5vmin;
+			line-height: 5.5vh;
+		}
+		.container_2 aside div  p:first-letter
+		{
+			font-size: 6vmin;
+		}
+	</style>
+</head>
+<body>
+	
+	<main>
+		<div class="reel">
+			<img src="287b612d87648274e86c7e12124a2e66.gif">
+		</div>
+		<header>
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>Work</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+				<p>J Joan Jeremiah</p>
+
+			</nav>
+			<hr style="color: white;width: 100%;border: 1;transform: translateY(-11vh);transition: 2s;">
+		</header>
+		<section class="container_1">
+			<h1 id="text">HI I AM JOAN JEREMIAH.WELCOME TO MY WEBSITE.</h1>
+			<img src="287b612d87648274e86c7e12124a2e66.gif">
+			<div onclick="func1()">
+				<p>Play reel</p>
+			</div>
+		</section>
+		<section class="container_2">
+			<aside>	
+				<div>
+					<img src="7c11f563077653.5aa65266cb51c.gif">
+				</div>
+				<div>
+					<p>I am a web designer and developer with expertise in Hyper Text Markup Language,Cascading Styling Sheets and JavaScript.
+					<br>
+					I have made some projects and displayed them below.Hope you like it.
+					</p>
+				</div>
+			</aside>
+		</section>			
+	</main>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31423.768046634435!2d78.76230207607136!3d10.101458988632546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00670363e6ce47%3A0xf11ffac3cbdc56c6!2sKalanivasal%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1603127406036!5m2!1sen!2sin" frameborder="0" style="border:0;width: 100%;height: 50vh;filter: invert(1);" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	<script type="text/javascript">
+		window.onscroll = function() {myFunction()};
+		reel = document.querySelector(".reel");
+		body = document.querySelector("body");
+		text = document.querySelector("#text");
+		function myFunction() {
+		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		    document.querySelector("hr").style.transform = "translateY(0)";
+		  } else {
+		    document.querySelector("hr").style.transform = "translateY(-11vh)";
+		  }
+		  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+		    text.style.position = "absolute";
+		  } else {
+		    text.style.position = "fixed";
+		  }
+		}
+		function func1()
+		{
+			reel.style.transform = "perspective(2000px) rotateX(0deg)";
+			body.style.overflow = "hidden";
+		}
+	</script>
+</body>
+</html>
